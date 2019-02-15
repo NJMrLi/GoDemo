@@ -1,17 +1,16 @@
 package main
 
+import "ChannelDemo"
+
 func main(){
+
 	//HelloWorld.SayHello()
-
 	//SliceDemo.GetSliceCapAndLength()
-
 	//SliceDemo.GetAppendSlice()
-
 	//LoopDemo.TestForRange()
-
 	//LoopDemo.TestPoint()
 
-	//闭包联系
+	//闭包
 	//FuncDemo.ClosureDemo1()
 	//FuncDemo.ClosureDemo2()
 	//FuncDemo.ClosureDemo3()
@@ -19,7 +18,6 @@ func main(){
 
 	//函数和方法的区别
 	//FuncDemo.DiffFuncAndMethod()
-
 
 	//接口
 	//InterfaceDemo.ITableDemo()
@@ -34,4 +32,11 @@ func main(){
 	//GoroutineDemo.AtomicStoreAndRead()
 	//协程Gosched
 	//GoroutineDemo.GoschedDemo()
+
+	//无缓冲通道
+	//ChannelDemo.PlayTennis()
+	//ChannelDemo.Running()
+
+	//缓冲通道
+	ChannelDemo.BufferChannelDemo()
 }
