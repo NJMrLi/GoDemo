@@ -67,3 +67,5 @@ func ClosureDemo4(){
 		f()
 	}
 }
+
+
