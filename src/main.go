@@ -1,6 +1,6 @@
 package main
 
-import "ChannelDemo"
+import "DateTimeDemo"
 
 func main(){
 
@@ -38,5 +38,21 @@ func main(){
 	//ChannelDemo.Running()
 
 	//缓冲通道
-	ChannelDemo.BufferChannelDemo()
+	//ChannelDemo.BufferChannelDemo()
+
+	//使用Runner
+	//RunnerDemo.RunnerTest()
+
+	//常量举例
+	//IotaDemo.IotaTest()
+
+	//String举例1
+	//StringDemo.StringTest1()
+	//StringDemo.StringTest2()
+	dateTime:=DateTimeDemo.DateTimeBasic()
+	calcDateTime := DateTimeDemo.AddDay(dateTime)
+	timeStamp:=DateTimeDemo.GetDateTimeStamp(calcDateTime)
+	DateTimeDemo.GetDateTime(timeStamp)
+
+	DateTimeDemo.SimpleTicker()
 }
