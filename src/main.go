@@ -1,6 +1,9 @@
 package main
 
-import "DateTimeDemo"
+import (
+	"LoopDemo"
+	"fmt"
+)
 
 func main(){
 
@@ -9,6 +12,17 @@ func main(){
 	//SliceDemo.GetAppendSlice()
 	//LoopDemo.TestForRange()
 	//LoopDemo.TestPoint()
+
+	fmt.Println("-----ForTest1-------")
+	LoopDemo.ForTest1()
+	fmt.Println("-----ForTest2-------")
+	LoopDemo.ForTest2()
+	fmt.Println("-----ForTest3-------")
+	LoopDemo.ForTest3()
+	fmt.Println("-----ForTest4-------")
+	LoopDemo.ForTest4()
+	fmt.Println("-----ForTest5-------")
+	LoopDemo.ForTest5()
 
 	//闭包
 	//FuncDemo.ClosureDemo1()
@@ -49,10 +63,11 @@ func main(){
 	//String举例1
 	//StringDemo.StringTest1()
 	//StringDemo.StringTest2()
-	dateTime:=DateTimeDemo.DateTimeBasic()
-	calcDateTime := DateTimeDemo.AddDay(dateTime)
-	timeStamp:=DateTimeDemo.GetDateTimeStamp(calcDateTime)
-	DateTimeDemo.GetDateTime(timeStamp)
 
-	DateTimeDemo.SimpleTicker()
+	//时间
+	//dateTime:=DateTimeDemo.DateTimeBasic()
+	//calcDateTime := DateTimeDemo.AddDay(dateTime)
+	//timeStamp:=DateTimeDemo.GetDateTimeStamp(calcDateTime)
+	//DateTimeDemo.GetDateTime(timeStamp)
+	//DateTimeDemo.SimpleTicker()
 }

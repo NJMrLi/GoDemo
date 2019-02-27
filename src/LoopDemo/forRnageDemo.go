@@ -45,3 +45,57 @@ func TestPoint(){
 	fmt.Println("&value_temp2",&value_temp2)
 	fmt.Println("&value2",&value2)
 }
+
+
+func ForTest1(){
+	for i:=1;i<=10;i++{
+		fmt.Printf("i=%d\t",i)
+	}
+	fmt.Println()
+}
+
+func ForTest2(){
+	i:=1
+	for  ;i<=10; {
+		i=i+2
+		fmt.Printf("i=%d\t",i)
+	}
+	fmt.Println()
+
+	//等价于
+	for i<=10 {
+		i=i+2
+		fmt.Printf("i=%d\t",i)
+		fmt.Println()
+	}
+}
+
+func ForTest3(){
+	for x,y:=1,10; x<10 && y>1; x,y = x+1,y-1{
+		fmt.Printf("x=%d\t",x)
+		fmt.Printf("y=%d\t",y)
+		fmt.Println()
+	}
+	fmt.Println()
+}
+
+func ForTest4(){
+	count:=1
+	for {
+		fmt.Printf("Hello\t")
+		if(count == 3){
+			break
+		}
+		count++
+	}
+	fmt.Println()
+}
+
+func ForTest5(){
+	for i:=1;i<=9;i++{
+		for j:=1;j<=i;j++{
+			fmt.Printf("%d * %d = %d\t",i,j,i*j)
+		}
+		fmt.Println()
+	}
+}
