@@ -1,9 +1,6 @@
 package main
 
-import (
-	"LoopDemo"
-	"fmt"
-)
+import "ArrayDemo"
 
 func main(){
 
@@ -13,22 +10,34 @@ func main(){
 	//LoopDemo.TestForRange()
 	//LoopDemo.TestPoint()
 
-	fmt.Println("-----ForTest1-------")
-	LoopDemo.ForTest1()
-	fmt.Println("-----ForTest2-------")
-	LoopDemo.ForTest2()
-	fmt.Println("-----ForTest3-------")
-	LoopDemo.ForTest3()
-	fmt.Println("-----ForTest4-------")
-	LoopDemo.ForTest4()
-	fmt.Println("-----ForTest5-------")
-	LoopDemo.ForTest5()
+	//fmt.Println("-----ForTest1-------")
+	//LoopDemo.ForTest1()
+	//fmt.Println("-----ForTest2-------")
+	//LoopDemo.ForTest2()
+	//fmt.Println("-----ForTest3-------")
+	//LoopDemo.ForTest3()
+	//fmt.Println("-----ForTest4-------")
+	//LoopDemo.ForTest4()
+	//fmt.Println("-----ForTest5-------")
+	//LoopDemo.ForTest5()
 
 	//闭包
 	//FuncDemo.ClosureDemo1()
 	//FuncDemo.ClosureDemo2()
 	//FuncDemo.ClosureDemo3()
 	//FuncDemo.ClosureDemo4()
+	//FuncDemo.ClosureDemo5()
+	//FuncDemo.ClosureDemo6()
+	//FuncDemo.ClosureDemo7()
+
+	//FuncDemo.ClosureDemo8()
+	//FuncDemo.DeferTest1()
+	//FuncDemo.DeferTest2()
+
+	//FuncDemo.AnonyTest()
+	//FuncDemo.AnonyTest2()
+	//FuncDemo.AnonyTest3()
+	//FuncDemo.AnonyTest4()
 
 	//函数和方法的区别
 	//FuncDemo.DiffFuncAndMethod()
@@ -70,4 +79,8 @@ func main(){
 	//timeStamp:=DateTimeDemo.GetDateTimeStamp(calcDateTime)
 	//DateTimeDemo.GetDateTime(timeStamp)
 	//DateTimeDemo.SimpleTicker()
+
+	//数组
+	ArrayDemo.ArrayTest1()
+
 }

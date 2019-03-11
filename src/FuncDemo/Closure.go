@@ -1,6 +1,9 @@
 package FuncDemo
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 //函数闭包问题，下面的代码输出的结果是什么
 func ClosureDemo1(){
@@ -68,4 +71,63 @@ func ClosureDemo4(){
 	}
 }
 
+func Adder() func(int) int{
+	var x int
+	return func(d int) int{
+		x+=d
+		return x
+	}
+}
 
+func ClosureDemo5(){
+	var f = Adder()
+	fmt.Printf("结果=%d\n",f(1))
+	fmt.Printf("结果=%d\n",f(20))
+	fmt.Printf("结果=%d\n",f(300))
+}
+
+func Adder2(base int) func(int)int{
+	return func(i int) int{
+		base += i
+		return base
+	}
+}
+
+func ClosureDemo6(){
+	tmp1 := Adder2(10)
+	fmt.Println(tmp1(1),tmp1(2))
+
+	tmp2 := Adder2(100)
+	fmt.Println(tmp2(10),tmp2(20))
+}
+
+func calc(base int) (func(int)int,func(int)int){
+	add:= func(i int)int{
+		base +=i
+		return base
+	}
+	sub:= func(i int)int{
+		base -= i
+		return base
+	}
+	return add,sub
+}
+
+
+func ClosureDemo7(){
+	f1,f2 := calc(10)
+	fmt.Println(f1(1),f2(2))
+	fmt.Println(f1(3),f2(4))
+	fmt.Println(f1(5),f2(6))
+	fmt.Println(f1(7),f2(8))
+}
+
+func ClosureDemo8(){
+	for i:=0;i<5;i++{
+		go func(x int){
+			fmt.Println(x)
+		}(i)
+
+	}
+	time.Sleep(time.Second)
+}
